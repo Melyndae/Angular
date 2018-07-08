@@ -1,7 +1,7 @@
 # Angular
 
-##Qu'est ce que Angular ?
-##Le Framework Javascript by Google
+## Qu'est ce que Angular ?
+## Le Framework Javascript by Google
 
 Angular un Framework "côté client"
 
@@ -28,7 +28,7 @@ Google a basé Angular sur 4 principes fondamentaux :
     Utiliser les nouveaux standards du web
     Utiliser le TypeScript afin d’améliorer la productivité
 
-##Commencer rapidement un projet avec Angular Cli
+## Commencer rapidement un projet avec Angular Cli
 Nous allons voir :
 
     Comment créer nos fichiers
@@ -38,7 +38,7 @@ Nous allons voir :
 
 Avant de commencer, vous pourrez trouver la documentation d’Angular CLI ici : cli.angular.io
 
-##Installation d’Angular CLI
+## Installation d’Angular CLI
 
 Avant toute chose, vous devez avoir installé Node et npm.
 
@@ -48,7 +48,7 @@ npm install -g @angular/cli
 
 Et voilà vous avez installé Angular CLI.
 
-##Démarrage de votre projet
+## Démarrage de votre projet
 
 Pour démarrer une nouvelle application, il suffit d’exécuter la commande suivante :
 
@@ -56,7 +56,7 @@ ng new mon-projet-angular
 
 Bien entendu, vous pouvez remplacer "mon-projet-angular" par votre nom de projet.
 
-##La structure des dossiers
+## La structure des dossiers
 
 Après l’installation et la création de votre projet avec angular-cli, nous allons voir la structure des dossiers et fichiers dans l’architecture d’angular-cli.
 
@@ -166,7 +166,7 @@ Rassurez-vous, toutes ces dépendances sont automatiquement ajoutées et incluse
 
 Si vous regardez dans ce fichier, vous allez remarquer des balises <app-root></app-root>. Ces balises vont servir à injecter votre application.
 
-##Builder notre application
+## Builder notre application
 Bon, il est temps de run notre application. Rien de plus simple avec Angular-cli, il suffit d’executer la commande suivante :
 
 ng serve
@@ -186,7 +186,7 @@ Que dire d’autre sur ng serve d'Angular CLI ?
 
 Nous allons voir maintenant comment générer des “choses” pour votre application de façon simple.
 
-##Générer des "choses" pour votre application
+## Générer des "choses" pour votre application
 Il est possible de générer plusieurs parties pour votre application.
 
 Pour cela, il faut utiliser la commande ng generate. Avec cette commande il est possible de créer :
@@ -201,7 +201,7 @@ On peut dire que Angular-cli va nous simplifier clairement la vie au niveau de l
 
 Nous allons voir cela avec un exemple concret.
 
-##Comment créer un composant avec Angular-CLI
+## Comment créer un composant avec Angular-CLI
 
 ng generate component hello-world
 
@@ -221,7 +221,7 @@ La commande a créé un dossier hello-world, les fichiers associés à ce compos
 
 Remarque : Quand vous utilisez la commande ng generate component, pensez au nom de votre composant et pas au nom de la classe. Par exemple, si vous utilisez la commande ng generate component HelloWorldComponent, vous allez créer un composant HelloWorldComponentComponent.
 
-##Générer un nouveau module
+## Générer un nouveau module
 
 Il est possible d’ajouter des modules. Ils servent à encapsuler des fonctionnalités similaires dans votre application.
 
@@ -264,7 +264,7 @@ const routes: Routes = [];
 })
 export class ProjetRoutingModule { }
 
-##Créer un composant dans un module spécifique
+## Créer un composant dans un module spécifique
 
 Nous venons de créer un module, mais un module sans pouvoir créer un composant dedans ne sert à rien.
 
@@ -274,7 +274,7 @@ ng g component projet/create-project
 
 Nous avons maintenant un composant CreateProjetComponent dans notre module ProjetModule. Angular-cli nous a tout modifié et par conséquent, nous a bien simplifié la vie.
 
-##Générer d'autre chose
+## Générer d'autre chose
 
 Il est aussi possible de générer :
 
@@ -290,7 +290,7 @@ Il est aussi possible de générer :
 
 Comme vous pouvez le voir, il y a beaucoup de possibilités.
 
-##Les différentes possibilités de build votre application
+## Les différentes possibilités de build votre application
 
 Nous allons voir les différentes possibilités de build.
 
@@ -300,16 +300,16 @@ ng build
 
 Les bundles vont être générer dans le dossier dist. Il suffit d’ouvrir index.html dans votre navigateur et l’application va marcher.
 
-##Build en production
+## Build en production
 
 Pour optimiser le build en production, il est possible de lancer la commande de build avec le flag build afin de diminuer la taille des bundles.
 
 ng build --prod
 
-##Build en AOT
+## Build en AOT
 
 Vous pouvez ajouter le flag AOT pour diminuer de beaucoup la taille des bundles générés à partir du build.
 
 ng build --prod --aot
 
-#Voilà ! Ce cours est terminé !
+# Voilà ! Ce cours est terminé !

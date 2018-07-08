@@ -71,25 +71,25 @@ Après l’installation et la création de votre projet avec angular-cli, nous a
 // Le dossier où vous allez modifier vos fichiers de code
 //Là où va se trouver vos composants, services, etc..
 |- src/
-  |----- app/
-      |----- app.component.css|html|spec.ts|ts
-      |----- app.module.ts
-  |----- assets/
-  |----- environments/
-      |----- environment.prod.ts|ts
-  |----- favicon.ico
-  |----- index.html
-  |----- main.ts
-  |----- polyfills.ts
-  |----- styles.css
-  |----- test.ts
-  |----- tsconfig.app.json
-  |----- tsconfig.spec.json
-  |----- typings.d.ts
+        app/
+            app.component.css|html|spec.ts|ts
+            app.module.ts
+        assets/
+        environments/
+            environment.prod.ts|ts
+        favicon.ico
+        index.html
+        main.ts
+        polyfills.ts
+        styles.css
+        test.ts
+        tsconfig.app.json
+        tsconfig.spec.json
+        typings.d.ts
 
 // la configuration globale de votre application
-|- .angular-cli.json  // the main configuration file
-|- .editorconfig      // editorconfig which is used in some VS Code setups
+|- .angular-cli.json  // Le fichier de configuration principal
+|- .editorconfig
 |- .gitignore
 |- karma.conf.js
 |- package.json

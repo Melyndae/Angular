@@ -7,10 +7,7 @@ Angular un Framework "côté client"
 
 Angular est un framework JavaScript Open Source développé par Google. Il utilise l’architecture MVM (Modèle Vue Modèle), proche du modèle MVC. Cela va permettre de structurer son code et bien séparer la vue (l’interface) des modèles (fonctionnement).
 
-Jusqu’à maintenant, Angular a eu droit à 2 versions majeures. Angular 1, Appelé AngularJS et Angular 2, appelé simplement Angular.
-
 Il est considéré comme un langage « côté client », ceux-ci permettent de gérer l’interface utilisateur de chaque page (affichage, interactions…) de façon dynamique et viennent en complément aux langages côté serveur.
-Pourquoi est-ce que je l’utilise ?
 
 Les modules vont nous permettre de rajouter des fonctionnalités aux frameworks de base afin de pouvoir l’enrichir.
 
@@ -18,8 +15,6 @@ Il enrichit le HTML et le JavaScript en permettant de créer ses propres composa
 
 Une autre de ses particularités est son architecture MVM qui permet de gérer plus simplement l’interface et de la rendre plus dynamique en écrivant un minimum de code.
 Au revoir AngularJs et bonjour Angular
-
-On pourrait croire qu’un projet en AngularJS peut facilement être exporté sous Angular 2, mais ce n’est pas le cas, car toute a changé on considère que ce n’est plus le même framework.
 
 Google a basé Angular sur 4 principes fondamentaux :
 
@@ -36,7 +31,7 @@ Nous allons voir :
 - Bootstrapper notre application
 - Les différentes façons de builder
 
-Avant de commencer, vous pourrez trouver la documentation d’Angular CLI ici : cli.angular.io
+Avant de commencer, vous pourrez trouver la documentation d’Angular CLI ici : http://cli.angular.io
 
 ## Installation d’Angular CLI
 
@@ -61,46 +56,46 @@ Bien entendu, vous pouvez remplacer "mon-projet-angular" par votre nom de projet
 Après l’installation et la création de votre projet avec angular-cli, nous allons voir la structure des dossiers et fichiers dans l’architecture d’angular-cli.
 
 // Tout ce qui va concerner les tests end to end
-|- e2e/
-  |----- app.e2e-spec.ts
-  |----- app.po.ts
-  |----- tsconfig.e2e.json
+- e2e/
+  ----- app.e2e-spec.ts
+  ----- app.po.ts
+  ----- tsconfig.e2e.json
 
 // les dépendances avec npm
-|- node_modules/
+- node_modules/
 
 // l'endroit où les fichiers de build seront mis
-|- dist/
+- dist/
 
 // Le dossier où vous allez modifier vos fichiers de code
 //Là où va se trouver vos composants, services, etc..
-|- src/
-  |----- app/
-      |----- app.component.css|html|spec.ts|ts
-      |----- app.module.ts
-  |----- assets/
-  |----- environments/
-      |----- environment.prod.ts|ts
-  |----- favicon.ico
-  |----- index.html
-  |----- main.ts
-  |----- polyfills.ts
-  |----- styles.css
-  |----- test.ts
-  |----- tsconfig.app.json
-  |----- tsconfig.spec.json
-  |----- typings.d.ts
+- src/
+  ----- app/
+      ----- app.component.css|html|spec.ts|ts
+      ----- app.module.ts
+  ----- assets/
+  ----- environments/
+      ----- environment.prod.ts|ts
+  ----- favicon.ico
+  ----- index.html
+  ----- main.ts
+  ----- polyfills.ts
+  ----- styles.css
+  ----- test.ts
+  ----- tsconfig.app.json
+  ----- tsconfig.spec.json
+  ----- typings.d.ts
 
 // la configuration globale de votre application
-|- .angular-cli.json  // the main configuration file
-|- .editorconfig      // editorconfig which is used in some VS Code setups
-|- .gitignore
-|- karma.conf.js
-|- package.json
-|- protractor.conf.js
-|- README.md
-|- tsconfig.json
-|- tslint.json
+- .angular-cli.json  // le fichier de configuration principal
+- .editorconfig      
+- .gitignore
+- karma.conf.js
+- package.json
+- protractor.conf.js
+- README.md
+- tsconfig.json
+- tslint.json
 
 Voilà, vous avez l’organisation générale de l’architecture ci-dessus.
 
@@ -113,53 +108,53 @@ Les versions et le nom de chaque module sont sauvegardés dans un fichier packag
 Voici le fichier package.json que vous devriez à peu près avoir après avoir créé votre projet avec la commande ci-dessus :
 
 {
-  "name": "pterrat-angular-cli-tuto",
-  "version": "0.0.0",
-  "license": "MIT",
-  "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
-  },
-  "private": true,
-  "dependencies": {
-    "@angular/animations": "^5.0.0",
-    "@angular/common": "^5.0.0",
-    "@angular/compiler": "^5.0.0",
-    "@angular/core": "^5.0.0",
-    "@angular/forms": "^5.0.0",
-    "@angular/http": "^5.0.0",
-    "@angular/platform-browser": "^5.0.0",
-    "@angular/platform-browser-dynamic": "^5.0.0",
-    "@angular/router": "^5.0.0",
-    "core-js": "^2.4.1",
-    "rxjs": "^5.5.2",
-    "zone.js": "^0.8.14"
-  },
-  "devDependencies": {
-    "@angular/cli": "1.5.2",
-    "@angular/compiler-cli": "^5.0.0",
-    "@angular/language-service": "^5.0.0",
-    "@types/jasmine": "~2.5.53",
-    "@types/jasminewd2": "~2.0.2",
-    "@types/node": "~6.0.60",
-    "codelyzer": "~3.2.0",
-    "jasmine-core": "~2.6.2",
-    "jasmine-spec-reporter": "~4.1.0",
-    "karma": "~1.7.0",
-    "karma-chrome-launcher": "~2.1.1",
-    "karma-cli": "~1.0.1",
-    "karma-coverage-istanbul-reporter": "^1.2.1",
-    "karma-jasmine": "~1.1.0",
-    "karma-jasmine-html-reporter": "^0.2.2",
-    "protractor": "~5.1.2",
-    "ts-node": "~3.2.0",
-    "tslint": "~5.7.0",
-    "typescript": "~2.4.2"
-  }
+"name": "pterrat-angular-cli-tuto",
+"version": "0.0.0",
+"license": "MIT",
+"scripts": {
+"ng": "ng",
+"start": "ng serve",
+"build": "ng build",
+"test": "ng test",
+"lint": "ng lint",
+"e2e": "ng e2e"
+},
+"private": true,
+"dependencies": {
+"@angular/animations": "^5.0.0",
+"@angular/common": "^5.0.0",
+"@angular/compiler": "^5.0.0",
+"@angular/core": "^5.0.0",
+"@angular/forms": "^5.0.0",
+"@angular/http": "^5.0.0",
+"@angular/platform-browser": "^5.0.0",
+"@angular/platform-browser-dynamic": "^5.0.0",
+"@angular/router": "^5.0.0",
+"core-js": "^2.4.1",
+"rxjs": "^5.5.2",
+"zone.js": "^0.8.14"
+},
+"devDependencies": {
+"@angular/cli": "1.5.2",
+"@angular/compiler-cli": "^5.0.0",
+"@angular/language-service": "^5.0.0",
+"@types/jasmine": "~2.5.53",
+"@types/jasminewd2": "~2.0.2",
+"@types/node": "~6.0.60",
+"codelyzer": "~3.2.0",
+"jasmine-core": "~2.6.2",
+"jasmine-spec-reporter": "~4.1.0",
+"karma": "~1.7.0",
+"karma-chrome-launcher": "~2.1.1",
+"karma-cli": "~1.0.1",
+"karma-coverage-istanbul-reporter": "^1.2.1",
+"karma-jasmine": "~1.1.0",
+"karma-jasmine-html-reporter": "^0.2.2",
+"protractor": "~5.1.2",
+"ts-node": "~3.2.0",
+"tslint": "~5.7.0",
+"typescript": "~2.4.2"
+}
 }
 
 Rassurez-vous, toutes ces dépendances sont automatiquement ajoutées et incluses dans le fichier src/index.html. 
@@ -242,11 +237,11 @@ import { CommonModule } from '@angular/common';
 import { ProjetRoutingModule } from './projet-routing.module';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    ProjetRoutingModule
-  ],
-  declarations: []
+--imports: [
+----CommonModule,
+----ProjetRoutingModule
+],
+--declarations: []
 })
 export class ProjetModule { }
 
@@ -259,8 +254,8 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+--imports: [RouterModule.forChild(routes)],
+--exports: [RouterModule]
 })
 export class ProjetRoutingModule { }
 

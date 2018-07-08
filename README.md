@@ -1,4 +1,4 @@
 # Angular
 
-<img src="image/angular.svg" alt="logo angular">
+<img src="angular.svg" alt="logo angular">
 

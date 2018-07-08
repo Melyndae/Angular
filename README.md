@@ -23,18 +23,18 @@ On pourrait croire qu’un projet en AngularJS peut facilement être exporté so
 
 Google a basé Angular sur 4 principes fondamentaux :
 
-    Augmenter les performances
-    La possibilité de s’adapter plus efficacement sur mobile en utilisant les principes du material design
-    Utiliser les nouveaux standards du web
-    Utiliser le TypeScript afin d’améliorer la productivité
+- Augmenter les performances
+- La possibilité de s’adapter plus efficacement sur mobile en utilisant les principes du material design
+- Utiliser les nouveaux standards du web
+- Utiliser le TypeScript afin d’améliorer la productivité
 
 ## Commencer rapidement un projet avec Angular Cli
 Nous allons voir :
 
-    Comment créer nos fichiers
-    Créer un composant Angular
-    Bootstrapper notre application
-    Les différentes façons de builder
+- Comment créer nos fichiers
+- Créer un composant Angular
+- Bootstrapper notre application
+- Les différentes façons de builder
 
 Avant de commencer, vous pourrez trouver la documentation d’Angular CLI ici : cli.angular.io
 
@@ -44,7 +44,7 @@ Avant toute chose, vous devez avoir installé Node et npm.
 
 Ensuite pour installer angular CLI, il suffit de taper la commande suivante dans votre invité de commandes :
 
-npm install -g @angular/cli
+    npm install -g @angular/cli
 
 Et voilà vous avez installé Angular CLI.
 
@@ -52,7 +52,7 @@ Et voilà vous avez installé Angular CLI.
 
 Pour démarrer une nouvelle application, il suffit d’exécuter la commande suivante :
 
-ng new mon-projet-angular
+    ng new mon-projet-angular
 
 Bien entendu, vous pouvez remplacer "mon-projet-angular" par votre nom de projet.
 
@@ -169,20 +169,20 @@ Si vous regardez dans ce fichier, vous allez remarquer des balises <app-root></a
 ## Builder notre application
 Bon, il est temps de run notre application. Rien de plus simple avec Angular-cli, il suffit d’executer la commande suivante :
 
-ng serve
+    ng serve
 
 Angular CLI va build l’application avec webpack. Il est possible pour vous de voir le résultat sur http://localhost:4200, ou de l'ouvrir directement avec la commande 
 
-ng serve -open
+    ng serve -open
 
 Que dire d’autre sur ng serve d'Angular CLI ?
 
-    - Le build de votre application se fait avec webpack et plus avec SystemJs comme avant
-    - A chaque fois que vous sauvegardez un de vos fichiers, ng serve va recompiler automatiquement pour vous
-    - Il va automatiquement router pour vous
-    - Vous pourrez ouvrir votre application dans votre navigateur à http://localhost:4200
-    - Très simple d’utilisation et à comprendre
-    - Vous pouvez voir la taille de vos bundles pour votre application
+- Le build de votre application se fait avec webpack et plus avec SystemJs comme avant
+- A chaque fois que vous sauvegardez un de vos fichiers, ng serve va recompiler automatiquement pour vous
+- Il va automatiquement router pour vous
+- Vous pourrez ouvrir votre application dans votre navigateur à http://localhost:4200
+- Très simple d’utilisation et à comprendre
+- Vous pouvez voir la taille de vos bundles pour votre application
 
 Nous allons voir maintenant comment générer des “choses” pour votre application de façon simple.
 
@@ -191,11 +191,11 @@ Il est possible de générer plusieurs parties pour votre application.
 
 Pour cela, il faut utiliser la commande ng generate. Avec cette commande il est possible de créer :
 
-    - Un composant
-    - Une directive
-    - Une route
-    - Un pipe
-    - Un service
+- Un composant
+- Une directive
+- Une route
+- Un pipe
+- Un service
 
 On peut dire que Angular-cli va nous simplifier clairement la vie au niveau de la création de composants, pipe, … Et oui, c’est fini les créations à la main.
 
@@ -203,11 +203,11 @@ Nous allons voir cela avec un exemple concret.
 
 ## Comment créer un composant avec Angular-CLI
 
-ng generate component hello-world
+    ng generate component hello-world
 
 ou plus simplement par :
 
-ng g component hello-world
+    ng g component hello-world
 
 (Vous pouvez remplacer "hello-world" par le nom de votre composant.)
 Voilà, vous avez créer un composant Hello-world.
@@ -229,7 +229,7 @@ Il est intéressant de séparer en plusieurs modules les fonctionnalités de vot
 
 Pour générer un module, on reste dans la même idée que pour générer un composant :
 
-ng generate module projet --routing
+    ng generate module projet --routing
 
 ng generate module permet d’ajouter un module et le flag routing précédé de ng generate module, permet de l’associer à une route.
 
@@ -270,7 +270,7 @@ Nous venons de créer un module, mais un module sans pouvoir créer un composant
 
 Nous allons voir maintenant comment créer un composant CreateProjet dans notre ProjetModule.
 
-ng g component projet/create-project
+    ng g component projet/create-project
 
 Nous avons maintenant un composant CreateProjetComponent dans notre module ProjetModule. Angular-cli nous a tout modifié et par conséquent, nous a bien simplifié la vie.
 
@@ -296,7 +296,7 @@ Nous allons voir les différentes possibilités de build.
 
 Pour build en production, il suffit de lancer la commande suivante :
 
-ng build
+    ng build
 
 Les bundles vont être générer dans le dossier dist. Il suffit d’ouvrir index.html dans votre navigateur et l’application va marcher.
 
@@ -304,12 +304,12 @@ Les bundles vont être générer dans le dossier dist. Il suffit d’ouvrir inde
 
 Pour optimiser le build en production, il est possible de lancer la commande de build avec le flag build afin de diminuer la taille des bundles.
 
-ng build --prod
+    ng build --prod
 
 ## Build en AOT
 
 Vous pouvez ajouter le flag AOT pour diminuer de beaucoup la taille des bundles générés à partir du build.
 
-ng build --prod --aot
+    ng build --prod --aot
 
 # Voilà ! Ce cours est terminé !

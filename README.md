@@ -97,7 +97,7 @@ Après l’installation et la création de votre projet avec angular-cli, nous a
 |- README.md
 |- tsconfig.json
 |- tslint.json
-    ```
+```
 
 Voilà, vous avez l’organisation générale de l’architecture ci-dessus.
 

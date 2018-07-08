@@ -214,10 +214,10 @@ Voilà, vous avez créer un composant Hello-world.
 
 La commande a créé un dossier hello-world, les fichiers associés à ce composant :
 
-    hello-world.component.html (pour le template)
-    hello-world.component.css (pour le fichier style)
-    hello-world.component.ts (pour le code métier du composant)
-    hello-world.component.spec.ts (pour le fichier de test propre au composant)
+- hello-world.component.html (pour le template)
+- hello-world.component.css (pour le fichier style)
+- hello-world.component.ts (pour le code métier du composant)
+- hello-world.component.spec.ts (pour le fichier de test propre au composant)
 
 Remarque : Quand vous utilisez la commande ng generate component, pensez au nom de votre composant et pas au nom de la classe. Par exemple, si vous utilisez la commande ng generate component HelloWorldComponent, vous allez créer un composant HelloWorldComponentComponent.
 

@@ -1,7 +1,7 @@
 # Angular
 
 ## Qu'est ce que Angular ?
-## Le Framework Javascript by Google
+### Le Framework Javascript by Google
 
 Angular un Framework "côté client"
 
@@ -47,9 +47,9 @@ Et voilà vous avez installé Angular CLI.
 
 Pour démarrer une nouvelle application, il suffit d’exécuter la commande suivante :
 
-    ng new mon-projet-angular
+    ng new angular-project
 
-Bien entendu, vous pouvez remplacer "mon-projet-angular" par votre nom de projet.
+Bien entendu, vous pouvez remplacer "angular-project" par votre nom de projet.
 
 ## La structure des dossiers
 
@@ -57,20 +57,20 @@ Après l’installation et la création de votre projet avec angular-cli, nous a
 
 ```
 // Tout ce qui va concerner les tests end to end
-|- e2e/
-  |----- app.e2e-spec.ts
-  |----- app.po.ts
-  |----- tsconfig.e2e.json
+    e2e/
+        app.e2e-spec.ts
+        app.po.ts
+        tsconfig.e2e.json
 
 // les dépendances avec npm
-|- node_modules/
+    node_modules/
 
 // l'endroit où les fichiers de build seront mis
-|- dist/
+    dist/
 
 // Le dossier où vous allez modifier vos fichiers de code
 //Là où va se trouver vos composants, services, etc..
-|- src/
+    src/
         app/
             app.component.css|html|spec.ts|ts
             app.module.ts
@@ -88,15 +88,15 @@ Après l’installation et la création de votre projet avec angular-cli, nous a
         typings.d.ts
 
 // la configuration globale de votre application
-|- .angular-cli.json  // Le fichier de configuration principal
-|- .editorconfig
-|- .gitignore
-|- karma.conf.js
-|- package.json
-|- protractor.conf.js
-|- README.md
-|- tsconfig.json
-|- tslint.json
+    .angular-cli.json  // Le fichier de configuration principal
+    .editorconfig
+    .gitignore
+    karma.conf.js
+    package.json
+    protractor.conf.js
+    README.md
+    tsconfig.json
+    tslint.json
 ```
 
 Voilà, vous avez l’organisation générale de l’architecture ci-dessus.
@@ -301,13 +301,13 @@ Pour build en production, il suffit de lancer la commande suivante :
 
 Les bundles vont être générer dans le dossier dist. Il suffit d’ouvrir index.html dans votre navigateur et l’application va marcher.
 
-## Build en production
+### Build en production
 
 Pour optimiser le build en production, il est possible de lancer la commande de build avec le flag build afin de diminuer la taille des bundles.
 
     ng build --prod
 
-## Build en AOT
+### Build en AOT
 
 Vous pouvez ajouter le flag AOT pour diminuer de beaucoup la taille des bundles générés à partir du build.
 

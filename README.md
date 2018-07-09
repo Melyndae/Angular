@@ -47,9 +47,9 @@ Et voilà vous avez installé Angular CLI.
 
 Pour démarrer une nouvelle application, il suffit d’exécuter la commande suivante :
 
-    ng new angular-project
+    ng new mon-projet-angular
 
-Bien entendu, vous pouvez remplacer "angular-project" par votre nom de projet.
+Bien entendu, vous pouvez remplacer "mon-projet-angular" par votre nom de projet.
 
 ## La structure des dossiers
 
